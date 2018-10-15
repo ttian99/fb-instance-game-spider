@@ -1,0 +1,30 @@
+{
+  "name": "facebook-instant-game-spider",
+  "version": "1.0.0",
+  "description": "- [Pupperteer实战](https://www.jianshu.com/p/a9a55c03f768)",
+  "main": "spider.js",
+  "dependencies": {
+    "fast-csv": "^2.4.1",
+    "fs-extra": "^7.0.0",
+    "iconv-lite": "^0.4.24",
+    "moment": "^2.22.2",
+    "puppeteer": "^1.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-google": "^0.10.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ttian99/facebook-instant-game-spider.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ttian99/facebook-instant-game-spider/issues"
+  },
+  "homepage": "https://github.com/ttian99/facebook-instant-game-spider#readme"
+}
