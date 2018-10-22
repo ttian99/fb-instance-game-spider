@@ -125,7 +125,7 @@ function sortArray(arr) {
     });
     return arr;
 }
-
+/** 与上周比较排名变化情况 */
 function compareRank(curWeekArr, lastWeekArr) {
     return new Promise((resolve) => {
         let nArr = [];
@@ -154,28 +154,15 @@ function compareRank(curWeekArr, lastWeekArr) {
     })
 }
 
-
-async function test() {
-    const files = await getFilesArr('rawData');
-
-    for (let i = 0; i < files.length; i++) {
-        const filePath = files[i];
-        const data = await importCsvToJson(filePath);
-        console.log(data.length);
-
-        const rankArr = await getCurRank(data);
-        // console.log(rankArr[0]);
-        const newArr = await compareRank()
-        await exportJsonToCsv(filePath, rankArr);
-    }
-    console.log('test over');
-}
-
 async function getDelRank(arr) {
     const files = await getFilesArr('rawData');
     const curWeekFile = files[files.length - 1];
     const lastWeekFile = files[files.length - 2];
-    const curWeekArr = await importCsvToJson(curWeekFile);
+    console.log('curWeekFile: ' + curWeekFile);
+    console.log('lastWeekFile: ' + lastWeekFile);
+    let curWeekArr = await importCsvToJson(curWeekFile);
+    curWeekArr = await getCurRank(curWeekArr);
+    curWeekArr = await sortArray(curWeekArr);
     const lastWeekArr = await importCsvToJson(lastWeekFile);
     const newCurWeekArr = await compareRank(curWeekArr, lastWeekArr)
     await exportJsonToCsv(curWeekFile, newCurWeekArr);
