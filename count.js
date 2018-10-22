@@ -101,6 +101,9 @@ function getLevel(count) {
 function getDefaultItem() {
     return {
         '类型': '',
+        '游戏款数': 0,
+        'MAU': 0,
+        '款均MAU': 0,
         '1000w': 0,
         '500w': 0,
         '200w': 0,
@@ -108,10 +111,26 @@ function getDefaultItem() {
         '10w': 0,
         '1w': 0,
         '1k': 0,
-        '0k': 0,
-        '游戏总数': 0,
-        '玩家总数': 0
+        '0k': 0
     }
+}
+
+/** */
+function sortByMau(arr) {
+    arr.sort(function (obj1, obj2) {
+        let count1 = obj1.MAU;
+        let count2 = obj2.MAU;
+        if (!count1) {
+            return 1;
+        }
+        if (!count2) {
+            return -1;
+        }
+        count1 = Number(count1.replace(/,/g, ''));
+        count2 = Number(count2.replace(/,/g, ''));
+        return count2 - count1;
+    });
+    return arr;
 }
 
 async function total(arr) {
@@ -132,20 +151,39 @@ async function total(arr) {
             result[type] = getDefaultItem();
         }
         result[type][level]++;
-        result[type]['游戏总数']++;
-        result[type]['玩家总数'] += count;
+        result[type]['游戏款数']++;
+        result[type]['MAU'] += count;
     }
     // console.log(result);
 
     const resultArr = [];
     const keyArr = Object.keys(result);
-    for (let i = 0; i < keyArr.length; i++) {
+    const keyLen = keyArr.length;
+    const totalObj = getDefaultItem();
+    totalObj['类型'] = '总计';
+    for (let i = 0; i < keyLen; i++) {
         const key = await keyArr[i];
         resultArr[i] = result[key];
         resultArr[i]['类型'] = key;
-        // resultArr[i][' 0'] = resultArr[i]['0'];
-        // delete resultArr[i]['0']
+        resultArr[i]['款均MAU'] = Math.round(resultArr[i]['MAU'] / resultArr[i]['游戏款数']).toLocaleString();
+        // 计算总和
+        totalObj['游戏款数'] += resultArr[i]['游戏款数'];
+        totalObj['MAU'] += resultArr[i]['MAU'];
+        // totalObj['款均MAU'] += resultArr[i]['款均MAU'];
+        totalObj['1000w'] += resultArr[i]['1000w'];
+        totalObj['500w'] += resultArr[i]['500w'];
+        totalObj['200w'] += resultArr[i]['200w'];
+        totalObj['100w'] += resultArr[i]['100w'];
+        totalObj['10w'] += resultArr[i]['10w'];
+        totalObj['1w'] += resultArr[i]['1w'];
+        totalObj['1k'] += resultArr[i]['1k'];
+        totalObj['0k'] += resultArr[i]['0k'];
+        // 
+        resultArr[i]['MAU'] = resultArr[i]['MAU'].toLocaleString();
     }
+    totalObj['款均MAU'] = Math.round(totalObj['MAU'] / totalObj['游戏款数']).toLocaleString();
+    totalObj['MAU'] = totalObj['MAU'].toLocaleString();
+    resultArr.push(totalObj);
     return resultArr;
 }
 
@@ -169,10 +207,11 @@ async function getCurweekCount() {
     const files = await getFilesArr('formatData');
     const curWeekFile = files[files.length - 1];
     let curWeekArr = await importCsvToJson(curWeekFile);
-    const result = await total(curWeekArr);
+    curWeekArr = await total(curWeekArr);
+    curWeekArr = await sortByMau(curWeekArr);
     const filePath = path.join('count', path.basename(curWeekFile));
     const newFilePath = path.join('count', `count.${path.basename(curWeekFile)}`)
-    await exportJsonToCsv(filePath, result);
+    await exportJsonToCsv(filePath, curWeekArr);
     await utf8ToGbk(filePath, newFilePath);
     fs.remove(filePath);
 }

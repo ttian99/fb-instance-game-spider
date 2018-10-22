@@ -51,16 +51,25 @@ async function getFilesArr(root, cb) {
 }
 
 /** 加载csv数据为json */
-function importCsvToJson(fileName) {
+function importCsvToJson(fileName, code = 'utf8') {
     return new Promise((resolve, reject) => {
-        csvtojson()
-            .fromFile(fileName)
-            .then((jsonObj) => {
-                // console.log('=> len = ' + jsonObj.length);
-                // fs.writeJsonSync(`${fileName}.json`, jsonObj);
-                // cb && cb(jsonObj);
-                resolve(jsonObj);
+        // csvtojson()
+        //     .fromFile(fileName)
+        //     .then((jsonObj) => resolve(jsonObj))
+        if (code == 'gbk') {
+            fs.readFile(fileName, (err, data) => {
+                if (err) throw err;
+                data = iconv.decode(data, 'gbk');
+                csvtojson().fromString(data)
+                    .then(jsonObj => resolve(jsonObj))
             })
+        } else {
+            csvtojson()
+                .fromFile(fileName)
+                .then((jsonObj) => {
+                    resolve(jsonObj);
+                })
+        }
     })
 
 }
@@ -91,7 +100,7 @@ async function exportJsonToCsv(filePath, jsonObj) {
 
 /** utf8转码GBK */
 function utf8ToGbk(srcPath, destPath) {
-    console.log('srcPath = ' + srcPath + ' , destPath = ' + destPath );
+    console.log('srcPath = ' + srcPath + ' , destPath = ' + destPath);
     return new Promise((resolve, reject) => {
         if (destPath instanceof Function) {
             destPath = srcPath;
@@ -163,6 +172,7 @@ async function getDelRank(arr) {
     let curWeekArr = await importCsvToJson(curWeekFile);
     curWeekArr = await getCurRank(curWeekArr);
     curWeekArr = await sortArray(curWeekArr);
+    curWeekArr = await correct3GameType(curWeekArr);
     const lastWeekArr = await importCsvToJson(lastWeekFile);
     const newCurWeekArr = await compareRank(curWeekArr, lastWeekArr)
     await exportJsonToCsv(curWeekFile, newCurWeekArr);
@@ -170,6 +180,40 @@ async function getDelRank(arr) {
     utf8ToGbk(curWeekFile, destPath);
     console.log('getDelRank over');
 }
-getDelRank();
+
+/** 修正3个游戏的类型 */
+async function correct3GameType(arr) {
+    return new Promise(async (resolve) => {
+        for (let i = 0; i < arr.length; i++) {
+            const item = await arr[i];
+            if (item.game_name == 'Jelly Crush') {
+                item.app_center_categories = '消消乐';
+            } else if (item.game_name == 'EvoWars') {
+                item.app_center_categories = '多人在线战术竞技';
+            } else if (item.game_name == 'Snake Mania') {
+                item.app_center_categories = '多人在线战术竞技';
+            }
+        }
+        resolve(arr);
+    })
+}
+
+// 修正所有文件
+async function correctAllFiles() {
+    const files = await getFilesArr('formatData');
+    for (let i = 0; i < files.length; i++) {
+        const curWeekFile = files[i];
+        console.log('curWeekFile: ' + curWeekFile);
+        let curWeekArr = await importCsvToJson(curWeekFile, 'gbk');
+        curWeekArr = await correct3GameType(curWeekArr);
+        const newFileName = path.join('formatData', 'format.' + path.basename(curWeekFile));
+        await exportJsonToCsv(newFileName, curWeekArr);
+        await utf8ToGbk(newFileName, curWeekFile);
+        fs.remove(newFileName);
+    }
+}
+// getDelRank();
+
+correctAllFiles();
 
 

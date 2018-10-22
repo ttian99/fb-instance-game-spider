@@ -14,8 +14,8 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.93902E+15,UNO,Mattel163,"4,290,000",牌类,13,12,-1
 8.43754E+14,Quiz Planet,Lotum one GmbH,"3,580,000",竞猜与字谜,14,13,-1
 1.19225E+15,Chess,"Vizor Interactive, LLP","3,460,000",棋类,15,14,-1
-1.76615E+15,Snake Mania,SZ IYouLong,"3,340,000",跑酷,16,15,-1
-1.98339E+15,Let's Farm-Idle Tycoon,diandian,"2,340,000",模拟类,17,16,-1
+1.76615E+15,Snake Mania,SZ IYouLong,"3,340,000",多人在线战术竞技,16,15,-1
+1.98339E+15,"Let's Farm-Idle Tycoon",diandian,"2,340,000",模拟类,17,16,-1
 2.2365E+15,Archery 3D,Seastar Games,"2,310,000",运动类,18,17,-1
 1.77462E+14,Connect the Dots!,Lotum one GmbH,"2,220,000",益智类,19,19,0
 1.92086E+15,Cookie Crush,SOFTGAMES,"2,180,000",消消乐,20,18,-2
@@ -26,7 +26,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.70007E+14,Bricks Breaker Quest : Mission,Mobirix,"1,650,000",益智类,25,27,2
 2.14133E+15,Flying Gun,LIM,"1,640,000",动作类,26,22,-4
 2.31371E+14,Fashion Icon,"GBN, Inc.","1,640,000",角色扮演,27,25,-2
-1.016E+15,EvoWars,Neexeen Entertainment,"1,560,000",动作类,28,26,-2
+1.016E+15,EvoWars,Neexeen Entertainment,"1,560,000",多人在线战术竞技,28,26,-2
 5.27721E+14,Juice Master,bianzheng,"1,500,000",动作类,29,39,10
 1.40258E+15,Word Shuffle,Words Puzzle Games,"1,420,000",竞猜与字谜,30,29,-1
 2.03178E+15,Tank Battle - 3V3,SeaStar Game,"1,400,000",多人在线战术竞技,31,30,-1
@@ -108,7 +108,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.18474E+14,Snake VS Block: Shooter,SAS Studio,"410,000",动作类,109,87,-22
 2.24063E+15,Crafting and Building 3D,World Craft Games,"410,000",建筑类,110,114,4
 2.7703E+14,Spot the Difference,Softgames,"410,000",益智类,111,95,-16
-1.21934E+15,Jelly Crush,Cocos,"410,000",宾果,106,102,-4
+1.21934E+15,Jelly Crush,Cocos,"410,000",消消乐,106,102,-4
 4.12582E+14,Puzzly,Block Puzzle Games Free,"410,000",益智类,107,68,-39
 1.63465E+14,Archer Battlefield,YYG Games,"410,000",角色扮演,112,110,-2
 2.07373E+15,Snake vs. Blocks,Voodoo,"400,000",动作类,115,112,-3
@@ -127,7 +127,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 2.26466E+14,Candy Rain,SOFTGAMES,"360,000",益智类,126,122,-4
 1.46103E+14,Hill Racer,Ruocco,"360,000",动作类,127,129,2
 1.25279E+14,Cut the Rope 2,GamePix,"360,000",益智类,128,157,29
-1.96752E+15,Raven's Nightmare,Hyh Game,"350,000",动作类,131,205,74
+1.96752E+15,"Raven's Nightmare",Hyh Game,"350,000",动作类,131,205,74
 1.01912E+15,UNICORN - Color by Number,WePlay,"350,000",益智类,129,123,-6
 2.03623E+14,Word Connect Lite,Zenjoy,"350,000",竞猜与字谜,130,108,-22
 5.05167E+14,Snake,Nokia,"350,000",动作类,132,136,4
@@ -257,7 +257,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 2.07398E+15,Ball Puzzle,Fun Games for Free,"160,000",益智类,254,223,-31
 2.26166E+14,Speed Racing,SAS Studio,"160,000",运动类,258,246,-12
 4.95551E+14,Pass me if you can,Enmany,"160,000",跑酷,255,231,-24
-1.99598E+15,Don't Crash,KITERETSU Inc.,"150,000",动作类,262,237,-25
+1.99598E+15,"Don't Crash",KITERETSU Inc.,"150,000",动作类,262,237,-25
 5.29709E+14,Stickman Archer,XUXU,"150,000",动作类,260,243,-17
 1.68637E+15,Piano,Ruocco,"150,000",模拟类,261,234,-27
 2.34875E+14,Space Defense：Galaxy Fighter,Oasis Games,"150,000",动作类,263,276,13
@@ -293,7 +293,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.26496E+15,Cribbage,JD Software LLC,"110,000",牌类,291,298,7
 2.39274E+14,Sword of Legends,TD Games,"110,000",动作类,293,306,13
 2.00096E+15,Handless Millionaire,Heart Games,"110,000",益智类,295,305,10
-2.2408E+15,Grumpy Cat's Worst Game Ever,Lucky Kat,"110,000",动作类,294,262,-32
+2.2408E+15,"Grumpy Cat's Worst Game Ever",Lucky Kat,"110,000",动作类,294,262,-32
 3.147E+14,Rise it Up,Crocgames,"110,000",益智类,297,460,163
 2.0757E+15,One Line - Puzzle games,Game Studio,"110,000",益智类,296,293,-3
 1.63639E+14,Smart Dentist,The Creative Publisher,"110,000",模拟类,290,318,28
@@ -402,7 +402,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 7.65044E+14,Two cars,Baskin Apps,"59,000",模拟类,401,427,26
 2.08433E+14,3D Real Freekick,ROFL,"58,000",运动类,405,419,14
 1.81004E+14,To escape,hhq,"58,000",跑酷,404,410,6
-1.79094E+15,Women's Soccer,Super Appli,"58,000",运动类,403,517,114
+1.79094E+15,"Women's Soccer",Super Appli,"58,000",运动类,403,517,114
 2.06325E+15,GunShark,ZhongLin,"58,000",益智类,402,415,13
 4.95689E+14,Dream Football League,SeaStar Game,"57,000",运动类,409,429,20
 4.85063E+14,Last Ninja,Supergene,"57,000",动作类,408,691,283
@@ -425,7 +425,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 2.09512E+14,Trim FRVR,FRVR,"53,000",消消乐,421,401,-20
 2.04098E+15,Stickman Archery,Electron,"52,000",动作类,427,466,39
 6.38898E+14,Brain for Monster Truck,Electron,"52,000",动作类,428,453,25
-2.79811E+14,Let's Race : Merge Car,Clicks Play,"52,000",运动类,426,454,28
+2.79811E+14,"Let's Race : Merge Car",Clicks Play,"52,000",运动类,426,454,28
 2.52886E+14,Kick Friends,SweetGame,"52,000",动作类,430,461,31
 3.35727E+14,Super Rabbit - Free Jump Game,LuckyGame,"52,000",跑酷,432,444,12
 1.70963E+15,Last Cup,BusyBucket,"52,000",运动类,429,451,22
@@ -470,7 +470,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 2.22175E+14,Run Into Death,YYG Games,"45,000",角色扮演,469,497,28
 2.36611E+14,Roulette Throw,Samsung Games,"45,000",棋类,478,455,-23
 3.6031E+14,Car killer,TAGG,"45,000",动作类,479,538,59
-2.22377E+15,Let's Run！,AL GAMES,"45,000",运动类,470,383,-87
+2.22377E+15,"Let's Run！",AL GAMES,"45,000",运动类,470,383,-87
 5.4864E+14,Monster Flow,Crocgames,"45,000",益智类,473,500,27
 2.70456E+14,Lion Hunter,Xtreme Studio,"45,000",动作类,472,505,33
 2.68423E+14,Tiger Hunter,VCR GAME,"45,000",动作类,477,506,29
@@ -491,7 +491,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 2.30766E+15,Word Search Instant Fun,Word Game Specialists - RJS Tech,"43,000",益智类,496,524,28
 1.99849E+15,Treasure Run,Ruocco,"43,000",动作类,497,568,71
 2.37241E+14,Stick Soldier,Dark soul studio,"43,000",动作类,498,513,15
-1.79276E+15,Div's first app,any,"43,000",动作类,486,434,-52
+1.79276E+15,"Div's first app",any,"43,000",动作类,486,434,-52
 4.62861E+14,Street Racing,Shell,"43,000",模拟类,487,543,56
 1.37439E+15,Super Mega Baseball,TAGG,"43,000",运动类,488,527,39
 2.58611E+14,Hill West,Ruocco,"43,000",动作类,489,550,61
@@ -579,7 +579,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 2.04191E+15,WAHA,WahaSoft,"34,000",牌类,572,693,121
 9.73293E+14,Zombie Run,Mauro Games,"34,000",动作类,575,598,23
 1.65945E+14,MOMO CRUSH,NHN PIXELCUBE,"34,000",动作类,574,599,25
-3.87217E+14,Cristiano Ronaldo: Kick'n'Run,Hugo Games,"34,000",跑酷,580,630,50
+3.87217E+14,"Cristiano Ronaldo: Kick'n'Run",Hugo Games,"34,000",跑酷,580,630,50
 1.96196E+15,Street Racing 3D,Top Racing Games,"34,000",运动类,578,698,120
 2.74037E+14,Magic Jigsaw Puzzles,ZiMAD,"33,000",益智类,587,627,40
 1.09763E+14,X-Trail Racing,Electron,"33,000",运动类,588,622,34
@@ -1054,7 +1054,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 3.22757E+14,Block Jumping World,HABUI,"14,000",益智类,1057,1050,-7
 1.8246E+15,Help！Catch him,DR.JAC,"14,000",益智类,1058,413,-645
 1.64671E+15,Golden Glove Goalkeeper,GKGames,"14,000",运动类,1059,1168,109
-4.70537E+14,Can't die,YT Game,"14,000",跑酷,1060,1175,115
+4.70537E+14,"Can't die",YT Game,"14,000",跑酷,1060,1175,115
 2.01766E+14,Chariot Hero,LUCKY.TG,"14,000",策略,1061,1174,113
 2.13102E+15,Tribal Rush,GameTrend,"14,000",策略,1062,1156,94
 2.79026E+14,Piano Glitter Tiles,Ruocco,"14,000",模拟类,1063,1165,102
@@ -1094,13 +1094,13 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 2.73223E+14,Rider,Top Racing Games,"13,000",运动类,1099,1266,167
 3.09133E+14,Unroll Ball Unblock Slide,XP Studio,"13,000",益智类,1100,1037,-63
 6.45612E+14,The Best Shooter,Bluefin Games,"13,000",运动类,1101,1257,156
-1.4781E+15,Let's Go Fishing,BlackMoon Design,"13,000",模拟类,1102,1166,64
+1.4781E+15,"Let's Go Fishing",BlackMoon Design,"13,000",模拟类,1102,1166,64
 3.7688E+14,Drift Parking,Ferryman,"13,000",跑酷,1103,1213,110
 1.99065E+15,Battle City,DianDian Game,"13,000",益智类,1104,1314,210
 1.94822E+15,Min Word,curry,"13,000",益智类,1105,1272,167
-2.70752E+14,Zumba's Bomb Dig,Aeria inc.,"13,000",棋类,1106,1083,-23
+2.70752E+14,"Zumba's Bomb Dig",Aeria inc.,"13,000",棋类,1106,1083,-23
 2.34928E+14,Ant smasher,Best Cool & Fun Games,"13,000",跑酷,1107,1301,194
-5.04428E+14,BURNIN'RUBBER instant - DataEast,G-MODE Corporation,"13,000",运动类,1108,1221,113
+5.04428E+14,"BURNIN'RUBBER instant - DataEast",G-MODE Corporation,"13,000",运动类,1108,1221,113
 2.62548E+14,Mini Golf Battle,Chatterbox Games,"13,000",运动类,1109,1191,82
 2.01552E+14,Kiss-o-rama,MEME Games,"13,000",模拟类,1110,1217,107
 8.89107E+14,CallBreak,June.in,"13,000",牌类,1111,907,-204
@@ -1108,9 +1108,9 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.75281E+15,Tower Defense Force,GGMoji,"13,000",动作类,1113,1185,72
 3.29668E+14,Zombie Mutation,lagged,"13,000",益智类,1114,766,-348
 2.06222E+15,Candy Super Lines Premium,iSmile,"13,000",消消乐,1115,1179,64
-2.34033E+14,Everybody's Ball,The best killing time game,"13,000",益智类,1116,1121,5
+2.34033E+14,"Everybody's Ball",The best killing time game,"13,000",益智类,1116,1121,5
 2.18289E+15,Matches Puzzle Game,PogaGames,"13,000",益智类,1117,1256,139
-2.50608E+14,Can't die 2,AL GAMES,"13,000",益智类,1118,1330,212
+2.50608E+14,"Can't die 2",AL GAMES,"13,000",益智类,1118,1330,212
 2.01783E+15,Bingo Adventure,SJP,"13,000",宾果,1119,835,-284
 5.94423E+14,FreeCell,G-MODE Corporation,"13,000",牌类,1120,1187,67
 1.43822E+14,Unblock Cars,CM Games,"13,000",益智类,1094,1359,265
@@ -1293,7 +1293,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.75067E+14,Sweet Cake Tower Absolutist,Absolutist Ltd,"10,000",益智类,1294,1254,-40
 4.29162E+14,Mad Shark,YYG Games,"10,000",角色扮演,1295,1403,108
 4.06453E+14,Treasure 2048,Samsung Games,"10,000",益智类,1296,1264,-32
-6.52514E+14,Don't Touch Yellow!,Fish Pond Studio,"10,000",动作类,1297,1455,158
+6.52514E+14,"Don't Touch Yellow!",Fish Pond Studio,"10,000",动作类,1297,1455,158
 1.07376E+15,Chess,JJ Inc,"10,000",益智类,1298,1363,65
 3.15052E+14,SKYRACE,KITERETSU Inc.,"10,000",动作类,1299,1323,24
 3.69368E+14,Basketball Master,wenji,"10,000",益智类,1300,1422,122
@@ -1531,7 +1531,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.53776E+15,西洋跳棋 | Checkers,Elf Games Works,"8,425",棋类,1530,1480,-50
 1.68834E+15,Slot Machine - Crazy Monkey,Casino Slot,"8,425",老虎机,1531,1473,-58
 2.27332E+14,Repeat After Simon,KILLERBIT LLC,"8,406",益智类,1532,1703,171
-2.74297E+14,Spidey's Journey,VTC Game,"8,396",动作类,1533,1482,-51
+2.74297E+14,"Spidey's Journey",VTC Game,"8,396",动作类,1533,1482,-51
 2.04247E+15,Jump Bottle,ika games,"8,394",动作类,1534,1741,207
 1.81487E+14,Crossy Dash,InitialF,"8,386",动作类,1535,1501,-34
 1.37617E+15,Sky Battle,Cool Games,"8,382",动作类,1536,1743,207
@@ -1573,7 +1573,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 3.79245E+14,Idle Farm Tycoon,Bubito,"8,100",策略,1572,1588,16
 6.15161E+14,Football Tipfever,nexxter interactive,"8,055",运动类,1573,1680,107
 2.8523E+14,Stud Rider,Freak X Apps,"8,053",角色扮演,1574,1626,52
-1.09888E+15,Hero's Hammer,Wild Spike,"8,019",跑酷,1575,1674,99
+1.09888E+15,"Hero's Hammer",Wild Spike,"8,019",跑酷,1575,1674,99
 1.87075E+15,Tap Stick,Other Guy,"8,014",跑酷,1576,1631,55
 3.98256E+14,MiniSquadron,Supermono Ltd,"8,009",动作类,1577,1785,208
 2.0764E+15,One Touch Football,FlashFooty.com,"8,008",运动类,1578,1771,193
@@ -1598,7 +1598,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 3.92993E+14,Floor tile,zhh,"7,834",益智类,1597,1545,-52
 1.70759E+14,Zoo Pinball,BlackMoon Design,"7,793",动作类,1598,1663,65
 2.0649E+15,Gold Miner,CM Games,"7,772",益智类,1599,1625,26
-1.02269E+15,Daddy's Treasure - Dig it,BoleGames,"7,766",模拟类,1600,1755,155
+1.02269E+15,"Daddy's Treasure - Dig it",BoleGames,"7,766",模拟类,1600,1755,155
 3.67994E+14,Archerry,hlw game,"7,764",运动类,1601,1584,-17
 5.33684E+14,Banana Jump,dehui,"7,753",动作类,1602,1899,297
 2.06486E+14,IQ Quiz,VS Games,"7,752",竞猜与字谜,1603,1659,56
@@ -1666,7 +1666,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.85844E+15,Gold Miner Adventure,NewKing,"7,290",动作类,1665,1577,-88
 4.90395E+14,Injector Basketball,Dreem Games,"7,284",益智类,1666,1733,67
 2.14474E+14,Grumpy Gorilla,Gamezop,"7,280",动作类,1667,2002,335
-2.23308E+15,Olivia's Potion Shop,WitchHut,"7,277",益智类,1668,1859,191
+2.23308E+15,"Olivia's Potion Shop",WitchHut,"7,277",益智类,1668,1859,191
 2.86725E+14,Super 100 Balls,MiniGames,"7,265",益智类,1669,1708,39
 4.43572E+14,Dunk Master,Star Fire,"7,254",运动类,1670,1723,53
 2.17751E+15,Vegas Slots Saga,天津掌金互动科技有限公司,"7,245",益智类,1671,1573,-98
@@ -1781,9 +1781,9 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.01233E+15,Pet,dehui,"6,523",模拟类,1780,1752,-28
 4.74934E+14,Hero never die,Lark Studio,"6,518",动作类,1781,2048,267
 5.92908E+14,Super Pineapple Pen,KIZ GAME,"6,512",益智类,1782,1816,34
-3.08247E+14,Tiny Turbos' Escape,FunZip,"6,506",跑酷,1783,1965,182
+3.08247E+14,"Tiny Turbos' Escape",FunZip,"6,506",跑酷,1783,1965,182
 2.14551E+15,Crazy Snake,YYG Games,"6,499",益智类,1784,1884,100
-9.64703E+14,Toby's Adventures,Happy Time,"6,490",跑酷,1785,1684,-101
+9.64703E+14,"Toby's Adventures",Happy Time,"6,490",跑酷,1785,1684,-101
 3.24557E+14,Love McDonalds,Appsmoto Studio,"6,486",动作类,1786,3411,1625
 2.35748E+14,Tetroid 3,Play Touch,"6,485",消消乐,1787,1827,40
 3.68953E+14,Geometry Tower,Ferryman,"6,483",益智类,1788,893,-895
@@ -1810,7 +1810,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.80492E+15,Runny Butt,kenyonb.com,"6,354",跑酷,1809,1688,-121
 2.14086E+14,Stick Walker,Instant Fun,"6,352",动作类,1810,2149,339
 7.65982E+14,Fire Up,Zonmob,"6,343",动作类,1811,1737,-74
-5.59524E+14,Henry's Journey,Journey,"6,341",建筑类,1812,1676,-136
+5.59524E+14,"Henry's Journey",Journey,"6,341",建筑类,1812,1676,-136
 6.35365E+14,Magic Words: Word Spell Puzzle,Clever Apps Pte. Ltd.,"6,340",竞猜与字谜,1813,1710,-103
 3.84532E+14,shaman treasure,oanhere,"6,333",消消乐,1814,1835,21
 3.85845E+14,Flow Free,Gameasa,"6,322",益智类,1815,1832,17
@@ -1874,7 +1874,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 2.95005E+14,Simple bridge,hjh,"6,055",跑酷,1873,2049,176
 1.76306E+14,Training Camp,LUYIN,"6,049",益智类,1874,2022,148
 2.07611E+15,Sweet Candy,ExeDream,"6,039",消消乐,1875,1966,91
-2.11398E+15,Crock O'Gold Slots,Mobile Amusements,"6,037",老虎机,1876,1840,-36
+2.11398E+15,"Crock O'Gold Slots",Mobile Amusements,"6,037",老虎机,1876,1840,-36
 3.63842E+14,Crazy Cat,YT Game,"6,025",益智类,1877,2077,200
 2.16568E+14,Rolling ball puzzle,Lieyou . Inc,"6,018",益智类,1878,1891,13
 1.73691E+14,Motocross eXtreme,Emisoft Games,"6,017",运动类,1879,2196,317
@@ -1936,7 +1936,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 4.6121E+14,shoot balls,Pegasus Games,"5,746",益智类,1935,1088,-847
 1.38316E+15,Happy farm,YetoGame,"5,745",角色扮演,1936,1852,-84
 1.11359E+14,One Line -Brain Training Game-,Super Appli,"5,739",益智类,1937,2176,239
-1.48128E+14,Guess The Brand's Logo,GameZoka,"5,737",竞猜与字谜,1938,2008,70
+1.48128E+14,"Guess The Brand's Logo",GameZoka,"5,737",竞猜与字谜,1938,2008,70
 1.56509E+15,Stick Samurai,KITERETSU Inc.,"5,734",动作类,1939,1907,-32
 2.07778E+14,Air Combat Plane War,One Up Plus,"5,733",动作类,1940,2066,126
 2.79016E+14,Super Gold Miner,SC Studio,"5,730",动作类,1941,2133,192
@@ -1994,7 +1994,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.60996E+14,Falling Dots,fun games,"5,474",益智类,1993,2258,265
 2.34512E+14,Soccer Mover,Maxim,"5,473",益智类,1994,2110,116
 4.0477E+14,Free Slots-Spin Legend,metek,"5,473",老虎机,1995,1786,-209
-1.64811E+15,Sophia's World,Intermediaware,"5,471",跑酷,1996,2038,42
+1.64811E+15,"Sophia's World",Intermediaware,"5,471",跑酷,1996,2038,42
 1.85631E+14,Cutting Master,K10 Studio,"5,461",模拟类,1997,2164,167
 7.18221E+14,Solitaire Spades - Spider Card,CFun Mobile,"5,457",牌类,1998,1920,-78
 5.82324E+14,Jet Penguin,Onduck Games,"5,456",跑酷,1999,2297,298
@@ -2074,7 +2074,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 2.48551E+14,Bunny n Gun,Gamesofa inc.,"5,108",动作类,2073,1982,-91
 1.6165E+14,Top Skiing,Onduck Games,"5,104",运动类,2074,2351,277
 2.16886E+15,Super Bit Tower Run,"3rd Pinnacle Games, LLC","5,103",跑酷,2075,2181,106
-4.63246E+14,Jacky's Farm: Match-3 Puzzle,Integra Games Global OU,"5,102",益智类,2076,1875,-201
+4.63246E+14,"Jacky's Farm: Match-3 Puzzle",Integra Games Global OU,"5,102",益智类,2076,1875,-201
 1.67841E+15,Idle Mafia Armory,diandian,"5,101",模拟类,2077,2051,-26
 7.55907E+14,Bunny vs Zombies,Gamesofa,"5,093",动作类,2078,2086,8
 3.56101E+14,Bonded Heroes - Idle Adventure,Gazeus Games,"5,089",跑酷,2079,2013,-66
@@ -2101,7 +2101,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 4.43463E+14,? Farm Puzzle Story 2 ROFL,ROFL,"4,981",消消乐,2100,2092,-8
 1.89133E+14,Rebound,Logic,"4,971",策略,2101,2282,181
 2.75612E+14,宠物大营救,秋葵互娱,"4,966",益智类,2102,1560,-542
-2.56756E+14,Last One Line-Children's game,BT Games,"4,964",益智类,2103,2123,20
+2.56756E+14,"Last One Line-Children's game",BT Games,"4,964",益智类,2103,2123,20
 3.88057E+14,Dank Shooter,Dankland,"4,962",动作类,2104,2062,-42
 2.11424E+15,King Of Math,bianfeng,"4,954",益智类,2105,2043,-62
 6.02193E+14,Swing To Pivot,YYG Games,"4,942",益智类,2106,2334,228
@@ -2201,7 +2201,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.24281E+14,腦力爭霸,"Vizor Interactive, LLP","4,592",益智类,2200,2140,-60
 1.9445E+14,2018 Kickerinho World,Blanche,"4,589",动作类,2201,2333,132
 1.6274E+14,Word Search Colorful,Wixot,"4,585",竞猜与字谜,2202,2145,-57
-2.27122E+14,ZB's first app,happyking,"4,583",角色扮演,2203,918,-1285
+2.27122E+14,"ZB's first app",happyking,"4,583",角色扮演,2203,918,-1285
 1.85895E+15,Hurry Jump,mdcoolgames,"4,579",益智类,2204,2477,273
 1.02309E+15,Fingertip Dance,Finger Dance,"4,578",益智类,2205,2407,202
 2.4061E+14,Sushi Ninja,Onduck Games,"4,565",动作类,2206,2341,135
@@ -2431,7 +2431,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 4.33541E+14,Color Switch Saga,ImicGame,"3,870",跑酷,2430,2215,-215
 1.44282E+15,Good Dog,GameN,"3,862",益智类,2431,2448,17
 2.69735E+14,Endless journey,YT Game,"3,861",运动类,2432,2544,112
-1.05571E+15,Hamster's cool run,LUYIN,"3,859",跑酷,2433,2555,122
+1.05571E+15,"Hamster's cool run",LUYIN,"3,859",跑酷,2433,2555,122
 6.24451E+14,Sprint 1000M,"Beijing zhenshuo Co., Ltd","3,855",益智类,2434,2632,198
 6.1546E+14,Cat Jump,Onduck Games,"3,853",跑酷,2435,2399,-36
 1.1045E+15,Deliver Pro,7724,"3,852",动作类,2436,2427,-9
@@ -2477,7 +2477,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 5.33625E+14,Rolling Balloon,Nshoot,"3,743",跑酷,2476,992,-1484
 2.11737E+15,Fruit Block,VStar,"3,741",益智类,2477,2521,44
 2.37738E+14,Penguin Skiing,Appsmoto Studio,"3,735",运动类,2478,2550,72
-8.37621E+14,LAY'S ИГРА,PepsiCo,"3,735",益智类,2479,,new
+8.37621E+14,"LAY'S ИГРА",PepsiCo,"3,735",益智类,2479,,new
 2.52619E+14,Avoid!,Onduck Games,"3,733",动作类,2480,2786,306
 8.09171E+14,Basketball Dunk Shot,PMware,"3,733",运动类,2481,2573,92
 1.28383E+14,Amelies Mahjong,Massive Cube,"3,725",益智类,2482,2487,5
@@ -2711,7 +2711,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 2.77158E+14,Brain Hacking,MPL Brother,"3,067",益智类,2710,2781,71
 1.54307E+15,Animal Defence,"GamesUion Technology Co.,Ltd","3,061",益智类,2711,2813,102
 1.68515E+15,Happy Trailz.io,Storm Flag,"3,059",动作类,2712,2527,-185
-5.78065E+14,21'SMASH,Norri Stockholm,"3,057",牌类,2713,2461,-252
+5.78065E+14,"21'SMASH",Norri Stockholm,"3,057",牌类,2713,2461,-252
 6.9026E+14,Geometry Run Glow,Great Games,"3,052",跑酷,2714,2465,-249
 3.73426E+14,RailwayConnect,BIGBANG Inc.,"3,034",益智类,2715,2892,177
 1.83995E+15,Octopus Blast Ink,play touch,"3,034",益智类,2716,2770,54
@@ -2773,7 +2773,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.80773E+14,Archer Master,YYG Games,"2,895",益智类,2772,2809,37
 1.61107E+15,EverBricks 2019 Endless Shooting,Best Puzzle Games,"2,893",益智类,2773,2607,-166
 1.54155E+14,4096,Chimpi Games,"2,893",益智类,2774,2696,-78
-1.548E+14,Don't Get Spiked,Studio Generative,"2,892",动作类,2775,2920,145
+1.548E+14,"Don't Get Spiked",Studio Generative,"2,892",动作类,2775,2920,145
 4.00676E+14,GoGi - NGON S? 1,ICOD,"2,891",动作类,2776,2849,73
 3.51311E+14,Find Cats,Absolutist Ltd,"2,885",益智类,2777,2740,-37
 5.07962E+14,Bye Green Box,YT Game,"2,883",益智类,2778,2659,-119
@@ -2937,13 +2937,13 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 2.16917E+14,A Day In The Life,Mattia Fortunati,"2,453",动作类,2936,3058,122
 3.84411E+14,High Or Low,Chimpi Games,"2,451",牌类,2937,2777,-160
 1.93799E+15,HiLo Cards,Drmop Games,"2,448",牌类,2938,2730,-208
-1.78829E+15,Sorcerer's Puzzle: Sphere Loop,KITERETSU Inc.,"2,446",益智类,2939,2985,46
+1.78829E+15,"Sorcerer's Puzzle: Sphere Loop",KITERETSU Inc.,"2,446",益智类,2939,2985,46
 6.29552E+14,Crown & Anchor,Crazysprite,"2,442",扑克与桌游,2940,2736,-204
 2.26049E+14,Color Wheel,YT Game,"2,439",益智类,2941,3001,60
 2.61505E+14,SkyLands,YT Game,"2,435",益智类,2942,3044,102
 1.66462E+14,Cat Puzzle Odenden,Rakuten Games,"2,434",益智类,2943,2791,-152
 2.33002E+14,Puzzle Blocks Ancient,sadsadas,"2,433",益智类,2944,2880,-64
-1.78171E+15,Qiujie's first app,any,"2,432",消消乐,2945,2694,-251
+1.78171E+15,"Qiujie's first app",any,"2,432",消消乐,2945,2694,-251
 2.08237E+15,Dank Space,Dankland,"2,427",跑酷,2946,2792,-154
 2.47074E+14,Block Matrix,TT Game Studio,"2,423",益智类,2947,2841,-106
 7.09821E+14,Merged Cube!,MD studio,"2,420",益智类,2948,2867,-81
@@ -3003,7 +3003,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 8.82516E+14,Flappy Bryan,Darryl Bartlett,"2,290",益智类,3002,3084,82
 2.01041E+14,You Win,Color Deer Game,"2,281",益智类,3003,3118,115
 1.41487E+15,Get 24,Get 24,"2,279",益智类,3004,2997,-7
-2.10858E+14,Let's Zeppelin! Sky Battleships,Gazeus Games,"2,277",策略,3005,2900,-105
+2.10858E+14,"Let's Zeppelin! Sky Battleships",Gazeus Games,"2,277",策略,3005,2900,-105
 2.23358E+14,Fast Knife,sadsadas,"2,276",益智类,3006,3010,4
 4.31727E+14,Penguin Run,Penguin Run,"2,274",动作类,3007,3115,108
 1.81433E+15,Pinball Space Adventure,Code This Lab s.r.l.,"2,273",益智类,3008,2969,-39
@@ -3322,7 +3322,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 4.30795E+14,Viking King ROFL,ROFL,"1,526",动作类,3321,3281,-40
 1.92377E+14,Rubber Bird,ClasikGames,"1,525",跑酷,3322,3526,204
 2.25223E+14,Eliminating,Match 3,"1,525",消消乐,3323,3436,113
-1.8088E+14,Don't Hit The Spikes +,Shameless Games,"1,523",动作类,3324,3307,-17
+1.8088E+14,"Don't Hit The Spikes +",Shameless Games,"1,523",动作类,3324,3307,-17
 9.74053E+14,2048 of Kings,CEL Games,"1,523",益智类,3325,3484,159
 1.67163E+15,Mind Reader,qingyun zhang,"1,522",益智类,3326,3284,-42
 2.16158E+14,数字闯关,newwolf,"1,510",益智类,3327,3382,55
@@ -3334,7 +3334,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.79682E+14,Stick Monkey,Bro Games,"1,495",动作类,3333,,new
 4.85996E+14,Stack Jump,Casual Studio,"1,493",动作类,3334,,new
 4.63943E+14,Catch Them,Catch Them,"1,491",动作类,3335,3138,-197
-4.61929E+14,Snake's Snack,kanshan,"1,489",益智类,3336,3249,-87
+4.61929E+14,"Snake's Snack",kanshan,"1,489",益智类,3336,3249,-87
 4.23163E+14,2048 Rush,KILLERBIT LLC,"1,482",益智类,3337,3269,-68
 2.09293E+14,Pop Puff and Away,2DKit LLC,"1,479",益智类,3338,3428,90
 1.88288E+14,A classic solitaire Card Game,Gaetano Carmelo La Delfa,"1,474",牌类,3339,3081,-258
@@ -3376,7 +3376,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.73358E+15,Matching Bricks,Match Three,"1,393",消消乐,3375,3489,114
 2.04464E+15,Space Jump,Fox Jump,"1,393",益智类,3376,3534,158
 2.14488E+15,Farting Duck,Noobzilla,"1,389",动作类,3377,3270,-107
-2.29468E+14,Sam's World - Starry Sky,Samuel Zhang,"1,377",跑酷,3378,3459,81
+2.29468E+14,"Sam's World - Starry Sky",Samuel Zhang,"1,377",跑酷,3378,3459,81
 7.89188E+14,GuaGuaJump,Roger,"1,358",益智类,3379,3361,-18
 1.62155E+15,Bubble Fever,CoolGames,"1,356",益智类,3380,3444,64
 1.69665E+14,Bricks Breaker,Linkgame.io,"1,356",益智类,3381,3225,-156
@@ -3413,7 +3413,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.92152E+14,eyesight,Dongliang Chen,"1,256",运动类,3412,3371,-41
 1.83889E+15,Space Shoot,Shooting Game,"1,256",益智类,3413,3228,-185
 2.16923E+15,Tap Tap Boy,PAUL,"1,255",动作类,3414,3230,-184
-2.38354E+14,Don't hit the spikes,ThomasPV,"1,254",跑酷,3415,3301,-114
+2.38354E+14,"Don't hit the spikes",ThomasPV,"1,254",跑酷,3415,3301,-114
 2.43683E+14,Hungry Chameleon,Jam Game,"1,250",动作类,3416,3346,-70
 2.09118E+14,Tap Tap Whac A Mole,DerekWTF,"1,242",动作类,3417,3515,98
 1.76569E+15,Neko Go Home,Go Home,"1,240",跑酷,3418,3463,45
@@ -3427,7 +3427,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 4.31972E+14,DRAW IN,Hyh Game,"1,217",益智类,3426,,new
 1.50612E+14,Oddballs Attack!,Chatterbox Games,"1,212",益智类,3427,3511,84
 2.54675E+14,Polygon,Polygon,"1,209",动作类,3428,3342,-86
-2.63083E+14,Where's the Ball?,Remember it,"1,203",益智类,3429,3469,40
+2.63083E+14,"Where's the Ball?",Remember it,"1,203",益智类,3429,3469,40
 3.54824E+14,The Test : guess logo,Appsmoto Studio,"1,198",益智类,3430,3370,-60
 4.67009E+14,Miner Jump,Onduck Games,"1,189",动作类,3431,,new
 1.58499E+14,T! Blocks ROFL,ROFL,"1,185",益智类,3432,3149,-283
@@ -3437,7 +3437,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 1.97465E+14,Gettin’ Quizzy With It,Sticky Toffee Studios Ltd,"1,175",竞猜与字谜,3436,3454,18
 1.64123E+14,Tap the Bubble Absolutist,Absolutist Ltd,"1,175",益智类,3437,3214,-223
 3.34771E+14,Rocket2,Crazy Games,"1,174",动作类,3438,,new
-3.59849E+14,Ballcat's Escape2,"GamesUion Technology Co.,Ltd","1,174",益智类,3439,3486,47
+3.59849E+14,"Ballcat's Escape2","GamesUion Technology Co.,Ltd","1,174",益智类,3439,3486,47
 1.5614E+14,No Color Block,Color Block,"1,164",消消乐,3440,3406,-34
 1.69263E+15,Domino Galaxy,Domino Galaxy,"1,164",动作类,3441,3425,-16
 1.63183E+15,Match the Target,Match Target,"1,163",益智类,3442,3535,93
@@ -3494,7 +3494,7 @@ id,game_name,developer_name,player_count,app_center_categories,rank,lastRank,del
 2.0866E+14,Flexible Fat,X Games,"1,005",益智类,3493,3340,-153
 4.70092E+14,Idle 10,dayuhk,"1,000",益智类,3494,3358,-136
 3.43922E+14,Switch Color Go,Switch Color Go,,动作类,3559,3334,-225
-4.06032E+14,Maximots - Words run,C'hoari Studio,,竞猜与字谜,3554,3285,-269
+4.06032E+14,Maximots - Words run,"C'hoari Studio",,竞猜与字谜,3554,3285,-269
 3.00428E+14,Mohex,Roman Parada,,益智类,3545,,new
 1.93101E+14,Flappy Numbers,ZERO TEAM,,益智类,3588,3240,-348
 2.78271E+14,Cube Escape,Z studio,,益智类,3557,,new
