@@ -19,7 +19,7 @@ function formatItem(item) {
         num = num * 10000;
         player_count = num.toLocaleString();
     }
-    item.id = _.trim(item.id) + "\x20";
+    item.id = _.trim(item.id) + "\t";
     item.developer_name = item.developer_name + "";
     item.game_name = item.game_name + "";
     item.player_count = player_count + "";
@@ -172,7 +172,7 @@ async function getDelRank(arr) {
     let curWeekArr = await importCsvToJson(curWeekFile);
     curWeekArr = await getCurRank(curWeekArr);
     curWeekArr = await sortArray(curWeekArr);
-    curWeekArr = await correct3GameType(curWeekArr);
+    curWeekArr = await correctGameType(curWeekArr);
     const lastWeekArr = await importCsvToJson(lastWeekFile);
     const newCurWeekArr = await compareRank(curWeekArr, lastWeekArr)
     await exportJsonToCsv(curWeekFile, newCurWeekArr);
@@ -181,17 +181,30 @@ async function getDelRank(arr) {
     console.log('getDelRank over');
 }
 
-/** 修正3个游戏的类型 */
-async function correct3GameType(arr) {
+/** 修正部分游戏的类型 */
+async function correctGameType(arr) {
     return new Promise(async (resolve) => {
         for (let i = 0; i < arr.length; i++) {
             const item = await arr[i];
-            if (item.game_name == 'Jelly Crush') {
-                item.app_center_categories = '消消乐';
-            } else if (item.game_name == 'EvoWars') {
-                item.app_center_categories = '多人在线战术竞技';
-            } else if (item.game_name == 'Snake Mania') {
-                item.app_center_categories = '多人在线战术竞技';
+            const gameName = item.game_name;
+            switch (gameName) {
+                case 'Jelly Crush':
+                    item.app_center_categories = '消消乐';
+                    break;
+                case 'EvoWars':
+                case 'Snake Mania':
+                case 'BrutalMania.io':
+                case 'minesweeper.io':
+                case 'Cocky.io':
+                case 'Cyclewars.io':
+                case 'Fish.io':
+                case 'Happy Trailz.io':
+                case 'Bricks Breaker':
+                case 'Bump.io':
+                    item.app_center_categories = '多人在线战术竞技';
+                    break;
+                default: 
+                    break;
             }
         }
         resolve(arr);
@@ -205,15 +218,16 @@ async function correctAllFiles() {
         const curWeekFile = files[i];
         console.log('curWeekFile: ' + curWeekFile);
         let curWeekArr = await importCsvToJson(curWeekFile, 'gbk');
-        curWeekArr = await correct3GameType(curWeekArr);
+        curWeekArr = await correctGameType(curWeekArr);
         const newFileName = path.join('formatData', 'format.' + path.basename(curWeekFile));
         await exportJsonToCsv(newFileName, curWeekArr);
         await utf8ToGbk(newFileName, curWeekFile);
         fs.remove(newFileName);
     }
 }
-// getDelRank();
 
+// getDelRank();
+//
 correctAllFiles();
 
 
