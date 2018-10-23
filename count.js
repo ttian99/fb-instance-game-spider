@@ -193,10 +193,11 @@ async function getAllweekCount() {
     for (let i = 0; i < files.length; i++) {
         const curWeekFile = files[i];
         let curWeekArr = await importCsvToJson(curWeekFile);
-        const result = await total(curWeekArr);
+        curWeekArr = await total(curWeekArr);
+        curWeekArr = await sortByMau(curWeekArr);
         const filePath = path.join('count', path.basename(curWeekFile));
         const newFilePath = path.join('count', `count.${path.basename(curWeekFile)}`)
-        await exportJsonToCsv(filePath, result);
+        await exportJsonToCsv(filePath, curWeekArr);
         await utf8ToGbk(filePath, newFilePath);
         await fs.remove(filePath);
     }
