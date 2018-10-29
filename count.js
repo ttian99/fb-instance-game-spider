@@ -217,5 +217,5 @@ async function getCurweekCount() {
     fs.remove(filePath);
 }
 
-getAllweekCount();
-// getCurweekCount();
+// getAllweekCount();
+getCurweekCount();

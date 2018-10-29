@@ -226,8 +226,8 @@ async function correctAllFiles() {
     }
 }
 
-// getDelRank();
+getDelRank();
 //
-correctAllFiles();
+// correctAllFiles();
 
 
