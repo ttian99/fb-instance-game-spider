@@ -170,9 +170,9 @@ async function getDelRank(arr) {
     console.log('curWeekFile: ' + curWeekFile);
     console.log('lastWeekFile: ' + lastWeekFile);
     let curWeekArr = await importCsvToJson(curWeekFile);
+    curWeekArr = await correctGameType(curWeekArr);
     curWeekArr = await getCurRank(curWeekArr);
     curWeekArr = await sortArray(curWeekArr);
-    curWeekArr = await correctGameType(curWeekArr);
     const lastWeekArr = await importCsvToJson(lastWeekFile);
     const newCurWeekArr = await compareRank(curWeekArr, lastWeekArr)
     await exportJsonToCsv(curWeekFile, newCurWeekArr);
