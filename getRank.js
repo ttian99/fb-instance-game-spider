@@ -7,18 +7,30 @@ const iconv = require('iconv-lite');
 const fastcsv = require('fast-csv');
 const path = require('path');
 
+/** 汉字数字单位转换为具体数字 */
+function trans(countStr) {
+    const list = {
+        '十': 10,
+        '百': 100,
+        '千': 1000,
+        '万': 10000,
+        '亿': 100000000
+    }
+    const arr = (countStr).match(/万|亿/g);
+    if (!arr) return countStr;
+    const key = arr[0]; // 得到‘亿’或者‘万’
+    let num = countStr.replace(key, '');
+    num = _.trim(num);
+    num = Number(num);
+    num = num * list[key];
+    countStr = num.toLocaleString();
+    return countStr;
+}
+
 /** 格式化每条记录 */
 function formatItem(item) {
     let player_count = item.player_count;
-    // console.log('player_count = ' + player_count);
-    if ((/万/g).test(player_count)) { // 将人数的“万”转换为具体数字
-        let num = player_count.replace('万', '');
-        num = _.trim(num);
-        num = num.replace(/,/g, '');
-        num = Number(num);
-        num = num * 10000;
-        player_count = num.toLocaleString();
-    }
+    player_count =trans(player_count);
     item.id = _.trim(item.id) + "\t";
     item.developer_name = item.developer_name + "";
     item.game_name = item.game_name + "";
@@ -53,9 +65,6 @@ async function getFilesArr(root, cb) {
 /** 加载csv数据为json */
 function importCsvToJson(fileName, code = 'utf8') {
     return new Promise((resolve, reject) => {
-        // csvtojson()
-        //     .fromFile(fileName)
-        //     .then((jsonObj) => resolve(jsonObj))
         if (code == 'gbk') {
             fs.readFile(fileName, (err, data) => {
                 if (err) throw err;
