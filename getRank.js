@@ -19,7 +19,8 @@ function trans(countStr) {
     const arr = (countStr).match(/万|亿/g);
     if (!arr) return countStr;
     const key = arr[0]; // 得到‘亿’或者‘万’
-    let num = countStr.replace(key, '');
+    countStr = countStr.replace(key, '');
+    num = countStr.replace(',', '');
     num = _.trim(num);
     num = Number(num);
     num = num * list[key];
