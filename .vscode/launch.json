@@ -7,6 +7,12 @@
         {
             "type": "node",
             "request": "launch",
+            "name": "test",
+            "program": "${workspaceFolder}\\lib\\test.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
             "name": "getRank",
             "program": "${workspaceFolder}\\getRank.js"
         },
