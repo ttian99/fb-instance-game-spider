@@ -1,0 +1,28 @@
+{
+    "svr": {
+        "port": 7000
+    },
+    "transporter": {
+        "service": "qq",
+        "port": 25,
+        "secureConnection": true,
+        "secure": false,
+        "auth": {
+            "user": "176553611",
+            "pass": "邮箱授权码"
+        }
+    },
+    "mailOptions": {
+        "from": "'发件人'<发件人邮箱>",
+        "to": "收件人邮箱1, 收件人邮箱2, 收件人邮箱3",
+        "cc": "抄送的邮箱1, 抄送的邮箱2",
+        "subject": "facebook小游戏数据",
+        "text": "",
+        "attachments": []
+    },
+    "scheduleRule": {
+        "minute": 29,
+        "second": 59,
+        "dayOfWeek": 2
+    }
+}
