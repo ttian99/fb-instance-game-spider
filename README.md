@@ -2,8 +2,8 @@
 
 ## reference
 - [Pupperteer实战](https://www.jianshu.com/p/a9a55c03f768)
-
 - [Pupperteer github](https://github.com/GoogleChrome/puppeteer)
+- [定时任务采用node-schedule](https://github.com/node-schedule/node-schedule)
 
 ## prepare
 modify the ```lib/config.json file```, type your email access pass in the transporter.auth property
